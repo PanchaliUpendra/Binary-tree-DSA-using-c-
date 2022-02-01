@@ -63,7 +63,7 @@ node* constructTreeUtil (int pre[], int post[], int* preIndex,
  
 // The main function to construct Full Binary Tree from given preorder and
 // postorder traversals. This function mainly uses constructTreeUtil()
-node *constructTree (int pre[], int post[], int size)
+node* constructTree (int pre[], int post[], int size)
 {
     int preIndex = 0;
     return constructTreeUtil (pre, post, &preIndex, 0, size - 1, size);
